@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Prueba</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- ===== BARRA 1: utilidades ===== -->
+<div class="bg-light border-bottom py-1">
+  <div class="container d-flex flex-wrap justify-content-end gap-3 small text-primary">
+    <span>Televentas: (601) 000 0000</span>
+    <span>Atención al cliente: (601) 000 0000</span>
+    <a href="#" class="text-decoration-none text-primary">Rastrea tu pedido</a>
+    <a href="catalogo.html" class="text-decoration-none text-primary">Catálogo</a>
+    <a href="#" class="text-decoration-none text-primary">PQR</a>
+  </div>
+</div>
+ 
+<!-- ===== BARRA 2: logo + buscador + cuenta/carrito ===== -->
+<div class="bg-white py-3 border-bottom">
+  <div class="container d-flex align-items-center gap-3">
+    <a href="index.html" class="navbar-brand fw-bold fs-3 text-primary m-0">
+      <i class="bi bi-pc-display"></i> TechStore
+    </a>
+    <form class="d-flex flex-grow-1" role="search">
+      <div class="input-group">
+        <span class="input-group-text bg-white"><i class="bi bi-search text-primary"></i></span>
+        <input class="form-control" type="search" placeholder="¿Qué buscas hoy?">
+      </div>
+    </form>
+    <a href="login.html" class="text-decoration-none text-center text-primary">
+      <i class="bi bi-person fs-4 d-block"></i>
+      <small>Mi cuenta</small>
+    </a>
+    <a href="carrito.html" class="text-decoration-none text-center text-primary position-relative">
+      <i class="bi bi-cart fs-4 d-block"></i>
+      <small>Mi carrito</small>
+      <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">3</span>
+    </a>
+  </div>
+</div>
+ 
+<!-- ===== BARRA 3: menú ===== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#categorias" role="button" data-bs-toggle="dropdown">
+            Categorías
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#categorias">Portátiles</a></li>
+            <li><a class="dropdown-item" href="#categorias">Computadores de escritorio</a></li>
+            <li><a class="dropdown-item" href="#categorias">Monitores</a></li>
+            <li><a class="dropdown-item" href="#categorias">Tarjetas gráficas</a></li>
+            <li><a class="dropdown-item" href="#categorias">Procesadores</a></li>
+            <li><a class="dropdown-item" href="#categorias">Memorias RAM</a></li>
+            <li><a class="dropdown-item" href="#categorias">Discos SSD</a></li>
+            <li><a class="dropdown-item" href="#categorias">Accesorios</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#envio">Rastrea tu envío</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#comocomprar">¿Cómo comprar?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tecnofertas">Tecnofertas</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- =====================================================
+     BANNER PRINCIPAL
+===================================================== -->
+<section class="hero">
+    <div class="hero-content">
+        <button class="slider-btn left">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <div>
+            <h1>La tecnología que necesitas</h1>
+            <p>
+                Encuentra computadores, monitores y componentes
+                al mejor precio.
+            </p>
+            <a href="catalogo.html" class="btn btn-light">
+                Ver productos
+            </a>
+        </div>
+        <button class="slider-btn right">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </div>
+</section>
+
+<!-- =====================================================
+     BENEFICIOS
+===================================================== -->
+<section class="beneficios" id="envio">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 beneficio">
+                <i class="bi bi-truck"></i>
+                <strong>Envío gratis</strong>
+                <span>En compras seleccionadas</span>
+            </div>
+            <div class="col-md-3 beneficio">
+                <i class="bi bi-shield-check"></i>
+                <strong>Compra segura</strong>
+                <span>Pagos protegidos</span>
+            </div>
+            <div class="col-md-3 beneficio">
+                <i class="bi bi-arrow-repeat"></i>
+                <strong>Devoluciones</strong>
+                <span>Fáciles y rápidas</span>
+            </div>
+            <div class="col-md-3 beneficio">
+                <i class="bi bi-headset"></i>
+                <strong>Soporte</strong>
+                <span>Atención al cliente</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     CATEGORÍAS
+===================================================== -->
+<section class="categorias container" id="categorias">
+    <h2>Explora por categoría</h2>
+    <div class="row g-3">
+        <div class="col-6 col-lg-3">
+            <a href="catalogo.html" class="categoria-card">
+                <i class="bi bi-laptop"></i>
+                <strong>Portátiles</strong>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3">
+            <a href="catalogo.html" class="categoria-card">
+                <i class="bi bi-display"></i>
+                <strong>Monitores</strong>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3">
+            <a href="catalogo.html" class="categoria-card">
+                <i class="bi bi-gpu-card"></i>
+                <strong>Tarjetas gráficas</strong>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3">
+            <a href="catalogo.html" class="categoria-card">
+                <i class="bi bi-cpu"></i>
+                <strong>Procesadores</strong>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     PRODUCTOS DESTACADOS
+===================================================== -->
+<section class="productos-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Productos destacados</h2>
+            <a href="catalogo.html" class="btn-ver-todo">
+                Ver todo →
+            </a>
+        </div>
+        <div class="row g-4">
+            <!-- PRODUCTO 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="producto-card">
+                    <span class="descuento">
+                        25%<br>OFF
+                    </span>
+                    <div class="producto-img">
+                     <img src="img/lapto.webp" class="card-img-top" alt="">
+                        
+                    </div>
+                    <div class="producto-info">
+                        <small>HP</small>
+                        <h3>
+                            Portátil HP 255 G10 16GB
+                        </h3>
+                        <div class="stock">
+                            En stock
+                        </div>
+                        <del>$2.000.000</del>
+                        <div class="precio">
+                            $1.499.000
+                        </div>
+                        <button class="btn-agregar">
+                            <i class="bi bi-cart-plus"></i>
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCTO 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="producto-card">
+                    <div class="producto-img">
+                        <i class="bi bi-display"></i>
+                    </div>
+                    <div class="producto-info">
+                        <small>LG</small>
+                        <h3>
+                            Monitor LG 24 pulgadas
+                        </h3>
+                        <div class="stock">
+                            En stock
+                        </div>
+                        <div class="precio">
+                            $700.000
+                        </div>
+                        <button class="btn-agregar">
+                            <i class="bi bi-cart-plus"></i>
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCTO 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="producto-card">
+                    <span class="descuento">
+                        15%
+                    </span>
+                    <div class="producto-img">
+                        <i class="bi bi-gpu-card"></i>
+                    </div>
+                    <div class="producto-info">
+                        <small>Nvidia</small>
+                        <h3>
+                            Tarjeta gráfica RTX
+                        </h3>
+                        <div class="stock">
+                            En stock
+                        </div>
+                        <del>$3.500.000</del>
+                        <div class="precio">
+                            $2.999.000
+                        </div>
+                        <button class="btn-agregar">
+                            <i class="bi bi-cart-plus"></i>
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCTO 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="producto-card agotado">
+                    <div class="producto-img">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+                    <div class="producto-info">
+                        <small>AMD</small>
+                        <h3>
+                            Procesador Ryzen 5
+                        </h3>
+                        <div class="stock stock-agotado">
+                            Agotado
+                        </div>
+                        <div class="precio">
+                            $850.000
+                        </div>
+                        <button class="btn-agregar">
+                            <i class="bi bi-cart-plus"></i>
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     TEMPORADA DE OFERTAS
+===================================================== -->
+<section class="ofertas" id="tecnofertas">
+    <div class="container">
+        <div class="ofertas-content">
+            <div>
+                <h2>Temporada de ofertas</h2>
+                <p>
+                    Aprovecha nuestros descuentos en equipos
+                    seleccionados. Renueva tu tecnología al mejor precio.
+                </p>
+                <a href="catalogo.html" class="btn btn-primary">
+                    Ver promociones
+                </a>
+            </div>
+            <i class="bi bi-tags oferta-icon"></i>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     MARCAS
+===================================================== -->
+<section class="marcas">
+    <div class="container text-center">
+        <h2>Marcas que confían en nosotros</h2>
+        <div class="marcas-list">
+            <span>HP</span>
+            <span>Asus</span>
+            <span>LG</span>
+            <span>AMD</span>
+            <span>Intel</span>
+            <span>Nvidia</span>
+        </div>
+    </div>
+</section>
+
+<section id="newsletter" class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h3>Suscríbete a nuestro boletín</h3>
+    <p>Recibe promociones y novedades de TechStore.</p>
+    <form class="d-flex justify-content-center gap-2 flex-wrap">
+      <input type="email" class="form-control w-auto" placeholder="Tu correo electrónico">
+      <button class="btn btn-warning" type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer>
+    <!-- BENEFICIOS FOOTER -->
+    <div class="footer-beneficios">
+        <div>
+            <i class="bi bi-truck"></i>
+            <span>Envíos a todo el país</span>
+        </div>
+        <div>
+            <i class="bi bi-shield-check"></i>
+            <span>Compra segura</span>
+        </div>
+        <div>
+            <i class="bi bi-arrow-repeat"></i>
+            <span>Devoluciones fáciles</span>
+        </div>
+        <div>
+            <i class="bi bi-headset"></i>
+            <span>Soporte al cliente</span>
+        </div>
+    </div>
+    <!-- FOOTER PRINCIPAL -->
+    <div class="container footer-content">
+        <div>
+            <h3>
+                <i class="bi bi-pc-display"></i>
+                TechStore
+            </h3>
+            <p>
+                Tu tienda de equipos de cómputo.
+                Tecnología de calidad con la mejor atención.
+            </p>
+            <div class="redes">
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h4>Tienda</h4>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="#">Rastrea tu envío</a>
+            <a href="carrito.html">Mi carrito</a>
+        </div>
+        <div>
+            <h4>Ayuda</h4>
+            <a href="contacto.html">Contáctanos</a>
+            <a href="#comocomprar">¿Cómo comprar?</a>
+            <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div>
+            <h4>Contacto</h4>
+            <p>
+                <i class="bi bi-geo-alt"></i>
+                Calle 123 #45-67, Tunja
+            </p>
+            <p>
+                <i class="bi bi-telephone"></i>
+                (601) 000 0000
+            </p>
+            <p>
+                <i class="bi bi-envelope"></i>
+                contacto@techstore.com
+            </p>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2026 TechStore. Nombre Autor.
+    </div>
+</footer>
+
+</body>
+</html>
